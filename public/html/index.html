@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="../css/styles_index.css">
+</head>
+<body>
+  <header>
+  <div>
+    <h1 id = "texttovoice">Перетворення тексту в голос</h1>
+    <nav>
+      <a class="btn" href="index.html">Головна</a>
+      <a class="btn" href="register.html">Реєстрація</a>
+      <a class="btn" href="login.html">Авторизація</a>
+    </nav>
+	</div>
+  </header>
+  
+  <main>
+    <textarea id="textInput" placeholder="Введіть текст тут..."></textarea><br>
+    <button onclick="processText()">Обробити текст</button>
+  </main>
+
+  <aside id="history">
+    <h2>Історія:</h2>
+    <ul id="historyList"></ul>
+  </aside>
+
+  <script src="../script.js"></script>
+</body>
+</html>
