@@ -1,0 +1,12 @@
+name: Check
+on: push
+jobs:
+  lint: 
+    runs-on: nginx:latest
+    steps:
+      - name: Checkout
+        uses: actions/heckout@v3
+      - name: Install deps
+        run: npm ci
+      - name: Lint
+        run: npm run lint
