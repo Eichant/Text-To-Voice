@@ -2,7 +2,7 @@ name: Check
 on: push
 jobs:
   lint: 
-    runs-on: nginx:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/heckout@v3
